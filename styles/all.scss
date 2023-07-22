@@ -1,0 +1,335 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  &:hover {
+    transform: translateY(-6px);
+    transition: all 0.3s ease-in-out;
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Bruno Ace SC', cursive;
+  line-height: 1.5;
+  color: #fff;
+  background-color: #000;
+}
+.container {
+  width: 1296px;
+  margin: 0 auto;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  li {
+    width: 306px;
+    &:last-child {
+      width: 196px;
+      text-align: right;
+    }
+  }
+  a {
+    display: block;
+    color: #d1d1d1;
+  }
+}
+.header {
+  padding: 72px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-content {
+  width: 636px;
+  h1 {
+    font-size: 64px;
+    span {
+      font-size: 128px;
+      color:#00df8f;
+      display: block;
+      text-align: right;
+    }
+  }
+}
+.contact-btn {
+  text-align: right;
+  a {
+    padding: 12px 24px;
+    background-color: #fff;
+    border-radius: 32px;
+  }
+}
+.introduction-bg {
+  background-image: url('../img/background-img.png');
+  padding: 160px 0;
+}
+.introduction {
+  display: flex;
+  justify-content: space-between;
+}
+.intro-content {
+  width: 526px;
+  h2 {
+    font-size: 64px;
+    margin-bottom: 36px;
+  }
+  p {
+    font-size: 24px;
+    margin-bottom: 32px;
+  }
+  img {
+    margin-right: 16px;
+  }
+}
+.intro-img {
+  display: flex;
+  gap: 24px;
+}
+.about-bg {
+  padding: 160px 0;
+  background-color: #fff;
+}
+.about {
+  display: flex;
+  align-items: center;
+  color:#15161d;
+}
+.about-card {
+  width: 50%;
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  li {
+    width: 306px;
+    padding: 16px;
+    border: 1px solid #E3E3E3;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.08);
+    div, h3 {
+      font-size: 20px;
+      margin-bottom: 4px;
+    }
+  }
+}
+.about-content {
+  width: 50%;
+  padding-left: 134px;
+  h2 {
+    font-size: 64px;
+    margin-bottom: 36px;
+    color:#000;
+  }
+  p {
+    font-size: 24px;
+  }
+}
+.contact-bg {
+  padding: 96px 0;
+  background-image: linear-gradient(#050014, #01021E);
+}
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact-title {
+  display: flex;
+  gap: 16px;
+  font-size: 64px;
+  img {
+    width: 100px;
+    height: 100px;
+  }
+}
+.social-list {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  img {
+    width: 162px;
+    height: 162px;
+  }
+}
+.projects-bg {
+  padding: 160px 0;
+  color: #000;
+  background-color: #fff;
+  h2 {
+    font-size: 64px;
+    padding-left: 550px;
+    margin-bottom: 16px;
+  }
+}
+.projects {
+  display: flex;
+  gap: 24px;
+}
+.projects-top {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 28px;
+  img {
+    width: 196px;
+    height: 196px;
+  }
+}
+.projects-content {
+  width: 636px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  p {
+    color: #15161d;
+  }
+}
+.projects-more-btn {
+  padding: 12px 24px;
+  color: #fff;
+  background-color: #000;
+  align-self: flex-start;
+  border-radius: 32px;
+  img {
+    width: 24px;
+    height: 24px;
+  }
+}
+.projects-bottom {
+  display: flex;
+  gap: 24px;
+}
+.footer {
+  padding: 40px 0;
+  text-align: center;
+}
